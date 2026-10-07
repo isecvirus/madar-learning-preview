@@ -1,0 +1,21 @@
+{
+  "name": "madar-learning",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "مدار — منصة عربية للدورات القصيرة في المهارات العملية",
+  "scripts": {
+    "start": "node tools/serve.mjs",
+    "build": "node tools/build.mjs",
+    "test": "node --test tests/core.test.mjs",
+    "test:browser": "node tests/browser.mjs",
+    "screenshots": "node tools/screenshots.mjs",
+    "format": "prettier --write src style.css tools tests README.md"
+  },
+  "devDependencies": {
+    "axe-core": "4.13.0",
+    "esbuild": "0.28.2",
+    "playwright": "1.62.1",
+    "prettier": "3.9.9"
+  }
+}

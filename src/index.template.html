@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#254fdb" />
+    <meta
+      name="description"
+      content="مدار: دورات عربية قصيرة في Excel والسيرة الذاتية وتنظيم المهام، مع دروس عملية وتمارين ومتابعة لتقدمك."
+    />
+    <title>مدار | مهارة جديدة، خطوة أقرب</title>
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+    <link
+      rel="preload"
+      href="assets/fonts/ibm-plex-arabic-400.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/ibm-plex-arabic-600.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- icon-sprite -->
+    <a class="skip-link" href="#main">تجاوز إلى المحتوى</a>
+    <header class="site-header">
+      <div class="header-inner container">
+        <a class="brand" href="#/" aria-label="مدار، الرئيسية"
+          ><svg class="brand-mark" viewBox="0 0 40 40" width="36" height="36" aria-hidden="true">
+            <circle cx="20" cy="20" r="14" fill="none" stroke="currentColor" stroke-width="6" />
+            <circle cx="31" cy="10" r="6" fill="#f6a33b" stroke="white" stroke-width="2" /></svg
+          ><span>مَدار</span></a
+        >
+        <nav class="desktop-nav" aria-label="التنقل الرئيسي">
+          <a href="#/" data-nav="home">الرئيسية</a
+          ><a href="#/courses" data-nav="courses">اكتشف الدورات</a
+          ><a href="#/my-learning" data-nav="learning">تعلّمي</a>
+        </nav>
+        <div class="header-actions">
+          <span class="header-note">كل يوم، أقرب.</span
+          ><a href="#/my-learning" class="button header-learning"
+            ><svg class="icon" aria-hidden="true"><use href="#icon-book-open"></use></svg> مساحة
+            التعلّم</a
+          ><button
+            id="menu-button"
+            class="icon-button menu-toggle"
+            aria-label="قائمة التنقل"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+          >
+            <svg class="icon" aria-hidden="true"><use href="#icon-menu"></use></svg>
+          </button>
+        </div>
+      </div>
+      <nav id="mobile-nav" class="mobile-nav container" aria-label="التنقل على الجوال" hidden>
+        <a href="#/">الرئيسية</a><a href="#/courses">اكتشف الدورات</a
+        ><a href="#/my-learning">تعلّمي</a>
+      </nav>
+    </header>
+    <div id="storage-notice" class="storage-notice" role="status" hidden>
+      الحفظ المحلي غير متاح. يمكنك التعلّم الآن، لكن قد تفقد تقدّمك وملاحظاتك عند إغلاق الصفحة.
+    </div>
+    <main id="main" tabindex="-1"><!-- initial-content --></main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a class="brand" href="#/">مَدار<span class="brand-dot"></span></a
+          ><span>مهارة جديدة، خطوة أقرب.</span>
+        </div>
+        <div class="footer-links">
+          <a href="#/courses">الدورات</a><a href="#/my-learning">تعلّمي</a
+          ><span>مشروع تجريبي لمعرض أعمال</span>
+        </div>
+      </div>
+    </footer>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <dialog id="reset-dialog" aria-labelledby="reset-title" aria-describedby="reset-description">
+      <div class="dialog-content">
+        <span class="eyebrow">بيانات التعلّم</span>
+        <h2 id="reset-title">تبدأ من جديد؟</h2>
+        <p id="reset-description">
+          ستُمسح ملاحظاتك ونتائجك وتقدّمك في جميع الدورات من هذا المتصفح. لا يمكن التراجع عن المسح.
+        </p>
+        <div class="dialog-actions">
+          <button class="button secondary" data-action="close-reset" autofocus>
+            الاحتفاظ ببياناتي</button
+          ><button class="button danger" data-action="confirm-reset">مسح البيانات</button>
+        </div>
+      </div>
+    </dialog>
+    <noscript
+      ><div class="noscript-notice">
+        فعّل JavaScript لتصفح الدورات وحفظ ملاحظاتك وإكمال التدريبات.
+      </div></noscript
+    >
+    <!-- page-templates -->
+    <!-- page-bootstrap -->
+    <script defer src="assets/app.js"></script>
+  </body>
+</html>
